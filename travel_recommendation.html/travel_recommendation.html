@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        /* Estilo para el cuerpo */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilo para el contenedor de fondo */
+        .background {
+            background-image: url('your-background-image.jpg'); /* Cambia esto por la URL de tu imagen */
+            background-size: cover; /* Cubre toda la ventana */
+            background-position: center; /* Centra la imagen */
+            height: 100vh; /* Altura completa de la ventana */
+            display: flex; /* Usar flexbox para centrar contenido */
+            align-items: center; /* Centra verticalmente */
+            justify-content: center; /* Centra horizontalmente */
+            color: white; /* Color del texto */
+            text-align: center; /* Centra el texto */
+        }
+
+        /* Estilo para la introducción */
+        .intro {
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente para mejorar la legibilidad */
+            padding: 20px; /* Espaciado interno */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+
+        /* Estilo para el navbar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333; /* Fondo del navbar */
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: white; /* Color del texto */
+            padding: 14px 20px; /* Espaciado interno */
+            text-decoration: none; /* Sin subrayado */
+            text-align: center; /* Centra el texto */
+        }
+
+        .navbar a:hover {
+            background-color: #575757; /* Color de fondo al pasar el ratón */
+        }
+
+        .search-container {
+            text-align: center; /* Centra el contenido del buscador */
+            margin: 20px 0; /* Espaciado superior e inferior */
+        }
+
+        .recommendations {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .recommendation {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            width: 200px; /* Ancho de cada recomendación */
+        }
+
+        .recommendation img {
+            max-width: 100%; /* Imágenes responsivas */
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="travel_recommendation.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <div class="background">
+        <div class="intro">
+            <h1>Welcome to Our Website!</h1>
+            <p>
+                This website is designed to provide you with the best recommendations and information on various topics. 
+                Explore our sections to find out more!
+            </p>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Enter keywords...">
+        <button id="searchBtn">Search</button>
+        <button id="resetBtn">Clear</button>
+    </div>
+
+    <div id="recommendations"></div>
+
+    <script src="travel_recommendation.js"></script> <!-- Enlazamos el archivo JavaScript -->
+</body>
+</html>

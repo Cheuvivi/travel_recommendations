@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Estilo para el cuerpo */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilo para la barra de navegación */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Estilo para el contenido */
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilo para el formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px; /* Ancho máximo del formulario */
+            margin: auto; /* Centrar el formulario */
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0; /* Espacio entre campos */
+            border: 1px solid #ccc;
+            border-radius: 5px; /* Bordes redondeados */
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer; /* Cambia el cursor al pasar el mouse */
+        }
+
+        button:hover {
+            background-color: #555; /* Cambia el color al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <div class="navbar">
+        <a href="travel_recommendation.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <h1>Contact Us</h1>
+        <p>If you have any questions, feel free to reach out to us using the form below.</p>
+        
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="travel_recommendation.js"></script> <!-- Enlazamos el archivo JavaScript -->
+</body>
+</html>
